@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Test Suite" verbose="1" >
+<test name="Method Test Cases" >
+    <classes>
+        <class name="test.SignUpPositiveFlow">
+            <methods>
+                <include name="testPositiveFlow" />
+                <include name="testValidateEmailField" />
+                <include name="testValidatePassword" />
+                <include name="testValidatePhone" />
+            </methods>
+        </class>
+        <class name="apiTest.LoginTest">
+            <methods>
+                <include name="testOtpLogin" />
+                <include name="testEmailValidation" />
+                <include name="validateAuthentication" />
+                <include name="validateLoginUnauthorized" />
+                <include name="testMaximus5Attempts" />
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
